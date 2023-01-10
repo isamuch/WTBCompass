@@ -1,0 +1,22 @@
+html, * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+}
+
+input, select {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+  height: 30px;
+}
+
+.msgStyle:hover {
+  cursor: pointer;
+  background-color: rgb(211, 211, 211);
+  border: none;
+}
