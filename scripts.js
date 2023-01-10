@@ -27,7 +27,9 @@ function saveCompassName() {
 
 function getCompassName() {
   const cName = localStorage.getItem('cName');
-  document.getElementById('cNames').value = cName;
+  if (!isEmpty(cName)) {
+    document.getElementById('cNames').value = cName;
+  }
 }
 
 function calPrice() {
