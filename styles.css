@@ -15,6 +15,11 @@ input, select {
   height: 30px;
 }
 
+.layout {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
 .msgStyle:hover {
   cursor: pointer;
   background-color: rgb(211, 211, 211);
