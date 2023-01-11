@@ -11,11 +11,11 @@ function updateMsg() {
   const cName = document.getElementById('cNames').value;
   const ign = document.getElementById('ign').value;
   const price = document.getElementById('price').value;
-  const amout = document.getElementById('amout').value;
+  const amount = document.getElementById('amount').value;
 
-  if (!isEmpty(cName) && !isEmpty(ign) && !isEmpty(price) && !isEmpty(amout)) {
+  if (!isEmpty(cName) && !isEmpty(ign) && !isEmpty(price) && !isEmpty(amount)) {
     const priceObj = calPrice();
-    const msg = `@${ign} WTB ${amout}x ${cName} = ${priceObj.divine} div ${priceObj.chaos} c`;
+    const msg = `@${ign} WTB ${amount}x ${cName} = ${priceObj.divine} div ${priceObj.chaos} c`;
     document.getElementById('msg').value = msg;
   }
 }
@@ -35,8 +35,8 @@ function getCompassName() {
 function calPrice() {
   const dValue = document.getElementById('dValue').value;
   const price = document.getElementById('price').value;
-  const amout = document.getElementById('amout').value;
-  const netPrice = price * amout;
+  const amount = document.getElementById('amount').value;
+  const netPrice = price * amount;
 
   const dPrice = parseInt(netPrice / dValue);
   const cPrice = netPrice - dPrice * dValue;
