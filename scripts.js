@@ -97,6 +97,7 @@ function getDivineValue() {
   fetch('https://api.poe.watch/get?category=currency&league=Sanctum')
     .then((response) => response.json())
     .then((data) => {
-      document.getElementById('dValue').value = parseInt(data[16].mean);
+      const divine = data.find((x) => x.name === 'Divine Orb');
+      document.getElementById('dValue').value = parseInt(divine.mean);
     });
 }
