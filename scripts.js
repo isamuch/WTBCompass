@@ -94,7 +94,7 @@ function getCompassList() {
 }
 
 function getDivineValue() {
-  fetch('https://api.poe.watch/get?category=currency&league=Crucible')
+  fetch('https://api.poe.watch/get?category=currency&league=Ancestor')
     .then((response) => response.json())
     .then((data) => {
       const divine = data.find((x) => x.name === 'Divine Orb');
